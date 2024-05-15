@@ -3,7 +3,7 @@ package com.ktn.pages;
 import com.ktn.driver.DriverManager;
 import com.ktn.enums.WaitStrategy;
 import com.ktn.factories.ExplicitWaitFactory;
-
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -79,8 +79,8 @@ public class BasePage {
 		log(CONSOLE, "moved to element " + elementname);
 	}
 
-	public void scrollToELement(By by, String elementname) {
-		WebElement element = DriverManager.getDriver().findElement(by);
+	public void scrollToELement(By by, WaitStrategy waitstrategy, String elementname) {
+		WebElement element = ExplicitWaitFactory.performExplicitWait(waitstrategy, by);
 		JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
 		js.executeScript("arguments[0].scrollIntoView();", element);
 		log(PASS, "scroll to " + elementname);
@@ -100,6 +100,20 @@ public class BasePage {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public void selectFromDropDown(By by, String strategy, WaitStrategy waitstrategy,  Object value) {
+		WebElement element = DriverManager.getDriver().findElement(by);
+		Select select = new Select (element);
+		if(strategy.equalsIgnoreCase("index")) {
+			select.selectByIndex((int)value);
+		}else if(strategy.equalsIgnoreCase("visibleText")) {
+			select.selectByVisibleText((String) value);
+		}else if(strategy.equalsIgnoreCase("visibleValue")) {
+			select.selectByValue((String) value);
+		}
+		log(PASS, "slected  "+value+" by using " + strategy);
+		log(CONSOLE, "slected  "+value+" by using " + strategy);
 	}
 
 }
