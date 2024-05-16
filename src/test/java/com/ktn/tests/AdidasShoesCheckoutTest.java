@@ -2,14 +2,14 @@ package com.ktn.tests;
 
 import java.util.Map;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import com.ktn.annotations.FrameworkAnnotation;
 import com.ktn.enums.CategoryType;
 import com.ktn.pages.NopCommerceHomePage;
 import com.ktn.pages.NopCommerceLoginPage;
-import com.ktn.pages.NopCommereceShoesProdcutPage;
-import com.ktn.pages.NopCommereceProdcutPage;
+import com.ktn.pages.NopCommerceShoesProdcutPage;
+import com.ktn.pages.NopCommerceProdcutPage;
 
 public class AdidasShoesCheckoutTest extends BaseTest{
 	public AdidasShoesCheckoutTest() {}
@@ -21,9 +21,8 @@ public class AdidasShoesCheckoutTest extends BaseTest{
 		
 		NopCommerceHomePage nopHomePage = new NopCommerceHomePage();
 		NopCommerceLoginPage nopsiginPage = new NopCommerceLoginPage();
-		NopCommereceShoesProdcutPage nopShoesPage = new NopCommereceShoesProdcutPage();
-		
-		NopCommereceProdcutPage nopProductPage = new NopCommereceProdcutPage();
+		NopCommerceShoesProdcutPage nopShoesPage = new NopCommerceShoesProdcutPage();
+		NopCommerceProdcutPage nopProductPage = new NopCommerceProdcutPage();
 		
 		nopHomePage.clickonLogin();
 		
@@ -32,8 +31,11 @@ public class AdidasShoesCheckoutTest extends BaseTest{
 		nopHomePage.moveToApparelFlyout().clickonShoes();		
 		
 		nopShoesPage.scrollToProduct().clickOnAdidasShoes();
-		nopProductPage.selectShoeSize("9").sleep(5000);;
 		
+		String msg = nopProductPage.selectShoeSize("9").clickAddToCart().getSuccessMessage();
+		System.out.println("success message---> "+msg);
+		
+		nopProductPage.clickOnShoppingCartUrl();
 	}
 
 }

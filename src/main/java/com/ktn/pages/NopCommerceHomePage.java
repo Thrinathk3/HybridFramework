@@ -14,6 +14,10 @@ public class NopCommerceHomePage extends BasePage{
 	private static final By Shoesctgry
 	=By.xpath("//ul[@class='top-menu notmobile']//a[text()='Shoes ']");
 	
+	private static final By registerLink
+	=By.linkText("Register");
+	
+	
 	public NopCommerceLoginPage clickonLogin() {
 		click(loginBtn, WaitStrategy.CLICKABLE,"LoginButton");
 		return new NopCommerceLoginPage();
@@ -30,9 +34,14 @@ public class NopCommerceHomePage extends BasePage{
 		return this;
 	}
 	
-	public NopCommereceShoesProdcutPage clickonShoes() {
+	public NopCommerceShoesProdcutPage clickonShoes() {
 		click(Shoesctgry, WaitStrategy.CLICKABLE,"Shoes category");
-		return new NopCommereceShoesProdcutPage();
+		return new NopCommerceShoesProdcutPage();
+	}
+	
+	public NopCommerceRegisterPage clickonRegisterLink() {
+		click(registerLink, WaitStrategy.CLICKABLE,"Register Link");
+		return new NopCommerceRegisterPage();
 	}
 	
 	

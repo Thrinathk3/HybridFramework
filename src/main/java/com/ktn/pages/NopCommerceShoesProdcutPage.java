@@ -4,25 +4,26 @@ import org.openqa.selenium.By;
 
 import com.ktn.enums.WaitStrategy;
 
-public class NopCommereceShoesProdcutPage extends BasePage {
+public class NopCommerceShoesProdcutPage extends BasePage {
 	
 	
-	public NopCommereceShoesProdcutPage() {}
+	public NopCommerceShoesProdcutPage() {}
 	
 	private static final By adidasShoes 
 	= By.xpath("//div[@class='products-wrapper']//a[text()='adidas Consortium Campus 80s Running Shoes']");
 	
 	
 	
-	public NopCommereceShoesProdcutPage scrollToProduct() {
+	public NopCommerceShoesProdcutPage scrollToProduct() {
 		scrollToELement(adidasShoes,WaitStrategy.PRESENCE, "adidas Shoes");
 		return this;
 	}
 	
-	public NopCommereceProdcutPage clickOnAdidasShoes() {
+	public NopCommerceProdcutPage clickOnAdidasShoes() {
 		click(adidasShoes,WaitStrategy.CLICKABLE, "adidas Shoes");
-		return new NopCommereceProdcutPage();
+		return new NopCommerceProdcutPage();
 	}
+	
 	
 	
 
