@@ -18,9 +18,9 @@ public class NopCommerceShoppingCartPage extends BasePage {
 		return this;
 	}
 	
-	public NopCommerceShoppingCartPage clickonCheckOutBtn() {
+	public NopCommerceCheckoutPage clickonCheckOutBtn() {
 		click(checkOutBtn, WaitStrategy.CLICKABLE, "Checkout button");
-		return this;
+		return new NopCommerceCheckoutPage();
 	}
 	
 }
