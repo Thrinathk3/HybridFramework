@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.ktn.tests.AdidasShoesCheckoutTest">
+      <class name="com.ktn.tests.NokiaCellPhoneCheckoutTest">
         <methods>
-          <include name="adidasShoesCheckoutTest" invocation-numbers="0"/>
+          <include name="NokiaCellPhoneCheckoutTest" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.ktn.tests.AdidasShoesCheckoutTest -->
+      </class> <!-- com.ktn.tests.NokiaCellPhoneCheckoutTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -20,6 +20,9 @@ public class NopCommerceProdcutPage extends BasePage{
 	private static final By shoppingCartUrl
 	=By.linkText("shopping cart");
 	
+	private static final By PhoneaddCartBtn 
+    =By.id("add-to-cart-button-20");
+	
 	public NopCommerceProdcutPage selectShoeSize(Object value) {
 		selectFromDropDown(shoeSizeDD, "visibleText",WaitStrategy.PRESENCE, value);
 		return this;
@@ -31,7 +34,7 @@ public class NopCommerceProdcutPage extends BasePage{
 	}
 	
 	public String getSuccessMessage() {
-		String msg =getElementText(successMessage,WaitStrategy.PRESENCE, "successMessage");
+		String msg =getElementText(successMessage,WaitStrategy.VISIBLE, "successMessage");
 		return msg;
 	}
 	
@@ -39,7 +42,9 @@ public class NopCommerceProdcutPage extends BasePage{
 		click(shoppingCartUrl,WaitStrategy.CLICKABLE, "Shopping cart URL");
 		return new NopCommerceShoppingCartPage();
 	}
-	
-	
-	
+	 public NopCommerceProdcutPage clickAddToCartonNokiaPdp() {
+			click(PhoneaddCartBtn,WaitStrategy.CLICKABLE, "add to cart button");
+			return this;
+		}
+		
 }

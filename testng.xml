@@ -10,7 +10,8 @@
   <test thread-count="5" name="Test">
     <classes>
 		 <class name="com.ktn.tests.NopRegisterTest"/>
-      <class name="com.ktn.tests.AdidasShoesCheckoutTest"/>
+		 <class name="com.ktn.tests.NokiaCellPhoneCheckoutTest"/>
+      <!--class name="com.ktn.tests.AdidasShoesCheckoutTest"/>-->
      
     <!-- <class name="com.ktn.tests.NopCommerceDemoTest"/>-->
     </classes>

@@ -2,51 +2,51 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-17T20:35:35 IST" name="Suite" finished-at="2024-05-17T20:36:15 IST" duration-ms="39763">
+  <suite started-at="2024-05-21T19:55:26 IST" name="Suite" finished-at="2024-05-21T19:55:52 IST" duration-ms="25163">
     <groups>
     </groups>
-    <test started-at="2024-05-17T20:35:35 IST" name="Test" finished-at="2024-05-17T20:36:15 IST" duration-ms="39763">
-      <class name="com.ktn.tests.AdidasShoesCheckoutTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.ktn.tests.AdidasShoesCheckoutTest@35e2d654]" started-at="2024-05-17T20:35:49 IST" name="setUp" finished-at="2024-05-17T20:35:56 IST" duration-ms="7082" status="PASS">
+    <test started-at="2024-05-21T19:55:26 IST" name="Test" finished-at="2024-05-21T19:55:52 IST" duration-ms="25163">
+      <class name="com.ktn.tests.NokiaCellPhoneCheckoutTest">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.ktn.tests.NokiaCellPhoneCheckoutTest@42a48628]" started-at="2024-05-21T19:55:33 IST" name="setUp" finished-at="2024-05-21T19:55:36 IST" duration-ms="2629" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@5baaae4c]]>
+                <![CDATA[[Ljava.lang.Object;@3c2772d1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="adidasShoesCheckoutTest(java.util.Map)[pri:0, instance:com.ktn.tests.AdidasShoesCheckoutTest@35e2d654]" started-at="2024-05-17T20:35:56 IST" name="adidasShoesCheckoutTest" description="Checkouting the adidas shoes from NOP commerece" data-provider="getData" finished-at="2024-05-17T20:36:14 IST" duration-ms="18473" status="PASS">
+        <test-method signature="NokiaCellPhoneCheckoutTest(java.util.Map)[pri:0, instance:com.ktn.tests.NokiaCellPhoneCheckoutTest@42a48628]" started-at="2024-05-21T19:55:36 IST" name="NokiaCellPhoneCheckoutTest" description="Checkouting the Nokia Cellphone from NOP commerece" data-provider="getData" finished-at="2024-05-21T19:55:51 IST" duration-ms="15697" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{fname=, password=S2F2eWFAMTIz, browser=chrome, testname=adidasShoesCheckoutTest, execute=yes, version=112.0.5615.138, menutext=, username=pkavya1235@gmail.com}]]>
+                <![CDATA[{fname=, password=S2F2eWFAMTIz, browser=chrome, testname=NokiaCellPhoneCheckoutTest, execute=yes, version=112.0.5615.138, menutext=, username=pkavya1235@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adidasShoesCheckoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ktn.tests.AdidasShoesCheckoutTest@35e2d654]" started-at="2024-05-17T20:36:14 IST" name="tearDown" finished-at="2024-05-17T20:36:15 IST" duration-ms="412" status="PASS">
+        </test-method> <!-- NokiaCellPhoneCheckoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ktn.tests.NokiaCellPhoneCheckoutTest@42a48628]" started-at="2024-05-21T19:55:51 IST" name="tearDown" finished-at="2024-05-21T19:55:52 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.ktn.tests.AdidasShoesCheckoutTest -->
+      </class> <!-- com.ktn.tests.NokiaCellPhoneCheckoutTest -->
       <class name="com.ktn.tests.NopRegisterTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.ktn.tests.NopRegisterTest@7ec7ffd3]" started-at="2024-05-17T20:35:36 IST" name="setUp" finished-at="2024-05-17T20:35:45 IST" duration-ms="8897" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.ktn.tests.NopRegisterTest@595b007d]" started-at="2024-05-21T19:55:27 IST" name="setUp" finished-at="2024-05-21T19:55:31 IST" duration-ms="4241" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@2375b321]]>
+                <![CDATA[[Ljava.lang.Object;@433e536f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="nopRegisterTest(java.util.Map)[pri:0, instance:com.ktn.tests.NopRegisterTest@7ec7ffd3]" started-at="2024-05-17T20:35:45 IST" name="nopRegisterTest" description="Registering in NOP Commerce site" data-provider="getData" finished-at="2024-05-17T20:35:49 IST" duration-ms="3375" status="PASS">
+        <test-method signature="nopRegisterTest(java.util.Map)[pri:0, instance:com.ktn.tests.NopRegisterTest@595b007d]" started-at="2024-05-21T19:55:31 IST" name="nopRegisterTest" description="Registering in NOP Commerce site" data-provider="getData" finished-at="2024-05-21T19:55:33 IST" duration-ms="1640" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nopRegisterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ktn.tests.NopRegisterTest@7ec7ffd3]" started-at="2024-05-17T20:35:49 IST" name="tearDown" finished-at="2024-05-17T20:35:49 IST" duration-ms="337" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ktn.tests.NopRegisterTest@595b007d]" started-at="2024-05-21T19:55:33 IST" name="tearDown" finished-at="2024-05-21T19:55:33 IST" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

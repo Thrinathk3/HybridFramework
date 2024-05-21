@@ -17,6 +17,11 @@ public class NopCommerceHomePage extends BasePage{
 	private static final By registerLink
 	=By.linkText("Register");
 	
+	private static final By ElectronicsFlyout
+	=By.xpath("//ul[@class='top-menu notmobile']//a[text()='Electronics ']");
+	private static final By Cellphonesctgry
+	=By.xpath("//ul[@class='top-menu notmobile']//a[text()='Cell phones ']");
+	
 	
 	public NopCommerceLoginPage clickonLogin() {
 		click(loginBtn, WaitStrategy.CLICKABLE,"LoginButton");
@@ -42,6 +47,14 @@ public class NopCommerceHomePage extends BasePage{
 	public NopCommerceRegisterPage clickonRegisterLink() {
 		click(registerLink, WaitStrategy.CLICKABLE,"Register Link");
 		return new NopCommerceRegisterPage();
+	}
+	public NopCommerceHomePage moveToCellPhonesFlyout() {
+		moveToWebElementElement(ElectronicsFlyout, "Electronics Flyout");
+		return this;
+	}
+	public NopCommerceCellPhonesProductPage clickonCellphones() {
+		click(Cellphonesctgry, WaitStrategy.CLICKABLE,"CellPhones category");
+		return new NopCommerceCellPhonesProductPage();
 	}
 	
 	
