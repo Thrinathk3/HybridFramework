@@ -20,7 +20,7 @@ public class NokiaCellPhoneCheckoutTest extends BaseTest {
 	@Test
 	@FrameworkAnnotation(author= {"Thrinath","Tingu"}, 
 	category = {CategoryType.REGRESSION,CategoryType.MINIREGRESSION})
-	public void NokiaCellPhoneCheckoutTest(Map<String,String> data) throws InterruptedException {
+	public void nokiaCellPhoneCheckoutTest(Map<String,String> data)  {
 		NopCommerceHomePage nopHomePage = new NopCommerceHomePage();
 		NopCommerceLoginPage nopsiginPage = new NopCommerceLoginPage();
 		NopCommerceCellPhonesProductPage nopCellPhonesPage = new NopCommerceCellPhonesProductPage();
@@ -49,7 +49,7 @@ public class NokiaCellPhoneCheckoutTest extends BaseTest {
 		.clickOnPaymentinfoContinueBtn()
 		.clickOnConfirmOrderContinueBtn();
 		String text=nopCheckOutPage.getOrderCompletedMsg();
-		System.out.println(" Sucess mesage "+msg);
+		System.out.println(" Sucess mesage "+text);
 		nopCheckOutPage.clickOnOrderCompletedContinueBtn();
 		
 		
